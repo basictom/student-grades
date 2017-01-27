@@ -11,15 +11,15 @@
 // Use console.log to output the following criteria:
 //
 
-// What is the lowest grade?
-
-var scores = [82, 71, 95, 55, 98, 69, 72, 78, 84, 64, 58, 87];
-var sortScores = scores.sort();
-console.log(sortScores.shift());
-
 // How many of each grade?
 
 var scores = [82, 71, 95, 55, 98, 69, 72, 78, 84, 64, 58, 87];
+
+var gradeF = 0;
+var gradeD = 0;
+var gradeC = 0;
+var gradeB = 0;
+var gradeA = 0;
 
 for(var i=0; i< scores.length; i++) {
   if ((scores[i] >= 50) && (scores[i] <= 60)){
@@ -30,18 +30,19 @@ for(var i=0; i< scores.length; i++) {
     gradeC += 1;
   }else if((scores[i] >= 81) && (scores[i] <= 90)){
     gradeB += 1;
-  }else if((scores[i] >= 91) && (scores[i] <= 100))
+  }else if((scores[i] >= 91) && (scores[i] <= 100)){
     gradeA += 1;
-  };
-  console.log(gradeF[i]);
+  }
 };
-
+console.log(gradeF, gradeD, gradeC, gradeB, gradeA)
 
 
 // What is the lowest grade?
-
 var scores = [82, 71, 95, 55, 98, 69, 72, 78, 84, 64, 58, 87];
 var sortScores = scores.sort();
-console.log(sortScores);
+console.log(sortScores.shift());
 
 // What is the highest grade?
+var scores = [82, 71, 95, 55, 98, 69, 72, 78, 84, 64, 58, 87];
+var sortScores = scores.sort();
+console.log(sortScores.pop());
